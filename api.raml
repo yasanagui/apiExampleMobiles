@@ -1,0 +1,32 @@
+#%RAML 1.0
+title: Mobiles
+version: 0.1.0
+description: !include documentation/apiDescription.md
+baseUri: https://www.arthur-mobiles.com/serviceProviders/v0
+
+uses:
+  serviceProviders: types/serviceProviders.raml
+
+/serviceProviders:
+  description: Resource for the management of the telpephone provider.
+  get:
+    description: |
+      Service that performs the obtenied of the list of telephone providers
+    queryParameters:
+      name:
+        description: Telephone provider name
+        type: string
+        example: Movistar
+        required: false
+    responses:
+      200:
+        description: Ok.
+        body:
+          application/json:
+            type: object
+            example: !include examples/serviceProviders/get_200.json
+            properties:
+              data:
+                type: serviceProviders.serviceProviders
+
+  /{serviceProvider-id}:

@@ -1,0 +1,20 @@
+#%RAML 1.0
+title: Type that represent a logo.
+
+types:
+  logo:
+    type: object
+    properties:
+      id:
+        type: string
+        description: |
+          Logo identifier.
+        required: false
+      name:
+        type: string
+        description: |
+          Logo name.
+      url:
+        type: string
+        description: |
+          Absolute url of the logo.

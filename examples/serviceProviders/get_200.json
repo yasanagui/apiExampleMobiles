@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "id": "26wwe471264dsds",
+      "name": "Telcel",
+      "logo": {
+        "id": "9207dsd",
+        "name": "Logo de telcel",
+        "url": "https://www.telcel.com/logos/9207dsd.png"
+      }
+    },
+    {
+      "id": "27365wfw764",
+      "name": "Movistar",
+      "logo": {
+        "id": "653572",
+        "name": "Logo de movistar",
+        "url": "https://www.movistar.com/logos/653572.png"
+      }
+    },
+    {
+      "id": "963iudwi232",
+      "name": "Unefon",
+      "logo": {
+        "id": "892323",
+        "name": "Logo de unefon",
+        "url": "https://www.unefon.com/logos/892323.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+#%RAML 1.0
+title: Type that represent a list of telephone provider.
+
+uses:
+  logo: logo.raml
+
+types:
+  serviceProviders:
+    type: array
+    items:
+      properties:
+        id:
+          type: string
+          description: |
+            Telephone provider identifier.
+          required: false
+        name:
+          type: string
+          description: |
+            Telephone provider name.
+          required: false
+        logo:
+          type: logo.logo
+          description: |
+            Telephone provider logo.
+          required: false
